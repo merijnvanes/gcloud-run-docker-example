@@ -97,8 +97,6 @@ This command will deploy the docker image to Cloud Run:
 gcloud run deploy SERVICE_NAME --image LOCATION-docker.pkg.dev/PROJECT_NAME/REPOSITORY_NAME/IMAGE_NAME:TAG --platform managed --region LOCATION
 ```
 
-gcloud run deploy qqq --image europe-west4-docker.pkg.dev/all-my-lovely-experiments/whatapp-bot/yyy --platform managed --region europe-west4
-
 ### Console
 Click "+CREATE SERVICE" in the [Cloud Run console](https://console.cloud.google.com/run). Fill in the appropriate values for the service and make sure to check the "Allow unauthenticated invocations" checkbox.
 
