@@ -68,9 +68,9 @@ docker build -t LOCATION-docker.pkg.dev/PROJECT_NAME/REPOSITORY_NAME/IMAGE_NAME:
 
 ### MacOS M1
 ```
-docker build -platform linux/amd64 -t LOCATION-docker.pkg.dev/PROJECT_NAME/REPOSITORY_NAME/IMAGE_NAME:TAG .
+docker build --platform linux/amd64 -t LOCATION-docker.pkg.dev/PROJECT_NAME/REPOSITORY_NAME/IMAGE_NAME:TAG .
 ```
-For users that are working on a MacOS M1, the `-platform linux/amd64` flag is required to build the image for the x86_64 architecture, otherwise you'll get the "Failed to start and then listen on the port defined by the PORT environment variable" error when creating a Cloud Run service later on. ([reference](https://stackoverflow.com/questions/66127933/cloud-run-failed-to-start-and-then-listen-on-the-port-defined-by-the-port-envi))
+For users that are working on a MacOS M1, the `--platform linux/amd64` flag is required to build the image for the x86_64 architecture, otherwise you'll get the "Failed to start and then listen on the port defined by the PORT environment variable" error when creating a Cloud Run service later on. ([reference](https://stackoverflow.com/questions/66127933/cloud-run-failed-to-start-and-then-listen-on-the-port-defined-by-the-port-envi))
 
 
 ## Run docker container of the image locally
